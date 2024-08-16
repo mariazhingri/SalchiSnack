@@ -1,0 +1,70 @@
+
+<div class="menu-container" [class.active]="isMenuOpen">
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <nav class="menu-content" [class.active]="isMenuOpen">
+    <span>LOGO</span>
+    <div class="horizontal-line"></div>
+      <!-- INICIO -->
+    <div class="dropdown">
+      <div class="dropbtn" (click)="mostrarOpcionesInicio()">
+        <!-- <mat-icon>home</mat-icon> -->
+        <div><i class="fas fa-house"></i></div>
+        <div><span>Inicio</span></div>
+        <div class="flecha"><i id="flecha" class="fa-solid fa-chevron-right"></i></div>
+        <!-- <mat-icon>keyboard_arrow_right</mat-icon> -->
+      </div>
+      <!-- OPCIONES DE SELECT -->
+       <div class="dropdown-content" id="opciones">
+        <div class="opciones">
+          <i class="fa-solid fa-calendar-days"></i>
+          <a href=""> Agenda</a>
+        </div>
+        <div class="opciones">
+          <i class="fa-solid fa-paw"></i>
+          <a href="">Clientes/Mascotas</a>
+        </div>
+        <div class="opciones">
+          <i class="fa-solid fa-hand-holding-heart"></i>
+          <a href=""> Articulos/Servicios</a>
+        </div>
+       </div>
+    </div>
+      <!-- COMPRAS -->
+    <div class="dropdown">
+      <div class="dropbtn" (click)="mostrarOpcionesCompras()">
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <div><span>Compras</span></div>
+        <div class="flecha"><i id="flecha" class="fa-solid fa-chevron-right"></i></div>
+      </div>
+      <!-- OPCIONES DE SELECT -->
+        <div class="dropdown-content" id="opciones-compras">
+        <div class="opciones">
+          <a href=""> Articulos/Servicios</a>
+        </div>
+        </div>
+    </div>
+     <!-- FACTURACIÓN -->
+    <div class="dropdown">
+      <div class="dropbtn" >
+        <i class="fa-solid fa-file-signature"></i>
+        <span>Facturación</span>
+      </div>
+    </div>
+     <!-- GESTIÓN EMPRESARIAL -->
+     <div class="dropdown">
+      <div class="dropbtn">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>Gestión Empresarial</span>
+      </div>
+    </div>
+     <!-- CONFIGURACIÓN -->
+    <div class="dropdown">
+      <div class="dropbtn">
+        <i class="fa-solid fa-gear"></i>
+        <span>Configuración</span>
+    </div>
+    </div>
+  </nav>
+</div>

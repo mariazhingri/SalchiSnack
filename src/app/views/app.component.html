@@ -1,0 +1,5 @@
+<div class="contenedor-todo" [class.menu-open]="isMenuOpen">
+  <app-menu (menuToggle)="onMenuToggle($event)"></app-menu>
+  <app-agenda></app-agenda>
+  <router-outlet></router-outlet>
+</div>

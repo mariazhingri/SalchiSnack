@@ -1,0 +1,16 @@
+body{
+    align-items: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    /* margin: 5% 40% 20% 40%; */
+}
+.contenedor-primero{
+    display: flex;
+    flex-direction: row;
+}
+table {
+    width: 100%;
+  }
